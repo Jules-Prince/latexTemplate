@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage[french]{babel}
+\usepackage[noheader]{../resources/packages/sleek}
+\usepackage{../resources/packages/sleek-title}
+\usepackage{../resources/packages/sleek-theorems}
+\usepackage{../resources/packages/sleek-listings}
+\usepackage{xcolor, soul}
+\usepackage{libertine}
+\usepackage{mathptmx}
+\usepackage{chngcntr}
+\counterwithin{figure}{subsection}
+\usepackage{silence}
+
+\graphicspath{ {../resources/images/} }
+
+% Document %
+%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{Jules Prince}
+\fancyhead[R]{Rapport Alternance}
+\renewcommand\footrulewidth{1pt}
+\fancyfoot[C]{\thepage{}}
+\fancyfoot[L]{FILL ME}
+\fancyfoot[R]{Université de Nice}
+
+\begin{document}
+
+    \pagenumbering{arabic}
+
+    \begin{titlepage}
+        \begin{sffamily}
+            \begin{center}
+
+                % Upper part of the page. The '~' is needed because \\
+                % only works if a paragraph has started.
+                \includegraphics[scale=0.5]{LogoUnice}~\\[1.5cm]
+
+                % Title
+                \begin{center}
+                    \line(1,0){500}
+                    { \huge \bfseries Rapport d'alternance de troisième année chez Schneider Electric \\ {\small - première période -} \\[0.4cm] }
+                    \line(1,0){500}
+
+                    \vspace*{15mm}
+                    \includegraphics[scale=0.5]{LogoSchneider}
+
+                    % Author and supervisor
+                    \vspace*{29mm}
+                    \textbf{Apprenti} : Jules PRINCE
+                    \\\textbf{Maître d’apprentissage} : Sébastien BANON
+                    \\\textbf{Tuteur Enseignant} : Julien DEANTONI
+                    \\jules.prince@se.com
+
+                    \vspace*{8mm}
+
+                    \textbf{Entreprise} : Schneider Electric
+                    \\09/2020 - 01/2023
+                \end{center}
+
+                \vfill
+                % Bottom of the pag
+                \today
+
+            \end{center}
+        \end{sffamily}
+    \end{titlepage}
+
+    \setcounter{page}{2}
+
+
+\end{document}
